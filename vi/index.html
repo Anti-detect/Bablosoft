@@ -1,0 +1,92 @@
+<!--
+Step 1: Tạo cấu trúc HTML cơ bản và thanh điều hướng đa ngôn ngữ
+Mô tả cho Copilot: Tạo một trang chủ cho BABLOSOFT (Tiếng Việt) với navbar sticky, menu chọn ngôn ngữ (/en/, /vi/, /zh/, /ru/, /pt/), và link tới trang đánh giá Multilogin. Thanh navbar nên có logo BABLOSOFT, liên kết tới 'So sánh', 'Bài đánh giá', 'Liên hệ', và một dropdown ngôn ngữ.
+
+Step 2: Tạo Nội Dung Trang Chủ (Tập trung vào bản Tiếng Việt trước)
+Mô tả cho Copilot: Bên trong <main>, tạo phần giới thiệu ngắn, một bảng so sánh tóm tắt (Multilogin, GoLogin, Dolphin{anty}, BABLOSOFT giả định), làm nổi bật cột Multilogin, link tới bài đánh giá chi tiết Multilogin (multilogin-review.html), và CTA lớn "Nhận Mã Giảm Giá 50% Multilogin". Thiết kế responsive.
+-->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BABLOSOFT: Đánh giá & So sánh các Trình duyệt Antidetect Tốt nhất 2025</title>
+    <meta name="description" content="BABLOSOFT - So sánh trình duyệt antidetect 2025. Đánh giá Multilogin, GoLogin, Dolphin{anty}. Nhận mã giảm 50% Multilogin: ADBNEW50.">
+    <link rel="canonical" href="/vi/index.html">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">BABLOSOFT</div>
+            <nav class="main-nav">
+                <a href="/vi/index.html">So sánh</a>
+                <a href="/multilogin-review.html">Bài đánh giá</a>
+                <a href="#contact">Liên hệ</a>
+                <div class="lang-dropdown">
+                    <button id="langBtn">Tiếng Việt ▾</button>
+                    <ul class="lang-menu">
+                        <li><a href="/en/index.html">English</a></li>
+                        <li><a href="/vi/index.html">Tiếng Việt</a></li>
+                        <li><a href="/zh/index.html">中文</a></li>
+                        <li><a href="/ru/index.html">Русский</a></li>
+                        <li><a href="/pt/index.html">Português</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!--
+        Nội dung chính cho phiên bản Tiếng Việt.
+        Mô tả cho Copilot: Thêm phần giới thiệu ngắn, bảng so sánh tóm tắt (4 cột), liên kết đến bài đánh giá Multilogin, và CTA lớn "Nhận Mã Giảm Giá 50% Multilogin". Đảm bảo bảng có điểm nổi bật cho Multilogin.
+        -->
+        <section class="hero">
+            <h1>BABLOSOFT: Đánh giá & So sánh các Trình duyệt Antidetect Tốt nhất 2025</h1>
+            <p class="lede">Chúng tôi đánh giá khách quan các giải pháp trình duyệt antidetect để giúp bạn chọn phần mềm phù hợp nhất cho nhu cầu marketing, automation và quản lý tài khoản.</p>
+            <p class="lede">Mã giảm giá độc quyền Multilogin: <strong>ADBNEW50</strong> (giảm 50%).</p>
+            <a class="cta" href="/multilogin-review.html">Xem đánh giá & Nhận mã ADBNEW50</a>
+        </section>
+
+        <section class="comparison">
+            <h2>Bảng So Sánh Nhanh</h2>
+            <div class="table-wrap">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>Tính năng</th>
+                            <th class="highlight">Multilogin</th>
+                            <th>GoLogin</th>
+                            <th>Dolphin{anty}</th>
+                            <th>BABLOSOFT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Quản lý profile</td><td class="highlight">Rộng & linh hoạt</td><td>Rất tốt</td><td>Ổn</td><td>Tiềm năng</td></tr>
+                        <tr><td>Độ chân thực</td><td class="highlight">Cao</td><td>Trung bình</td><td>Trung bình</td><td>Thấp</td></tr>
+                        <tr><td>Tích hợp proxy</td><td class="highlight">Đa dạng</td><td>Đa dạng</td><td>Hạn chế</td><td>—</td></tr>
+                        <tr><td>Giá</td><td class="highlight">Cao nhưng chuyên nghiệp</td><td>Hợp lý</td><td>Rẻ</td><td>Miễn phí</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="note">Gợi ý: Nhấn vào "Nhận Mã Giảm Giá" để xem ưu đãi độc quyền Multilogin.</p>
+        </section>
+
+        <section class="reviews">
+            <h2>Bài Viết Đánh Giá</h2>
+            <ul>
+                <li><a href="/multilogin-review.html">Đánh giá chi tiết Multilogin</a></li>
+                <!-- Links to future reviews -->
+            </ul>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <div class="container">© 2025 BABLOSOFT — Trang review độc lập</div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
